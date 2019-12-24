@@ -1,21 +1,28 @@
-# ItemsTable
+ItemsTable
+==========
 
 An example project, illustrating table filling and update.
 
----
+Screen
+------
 
-``` ditaa
+![Screen](./images/Screen.gif)
 
-                +------- requests items --------+
-                |                               |
-                |                               V
-    +-----------+-------------+    +--------------------------+
-    |   ItemsViewController   |    |   ItemsTableInteractor   |
-    +-----------+-------------+    +------------+-------------+
-                ^                               |
-                |                               |
-                +------- sends new items -------+
-                |                               |
-                +------- updates old items -----+
+Diagram
+-------
 
-```
+<!--
+            +------------ requests items ------------+
+            |                                        |
+            |                                        V
++-----------+-------------+              +-------------------------+
+|   ItemsViewController   |              |  ItemsTableInteractor   |
++-----------+-------------+              +-----------+-------------+
+            ^                                        |
+            |                                        |
+            +------------ sends new items -----------+
+            |                                        |
+            +----------- updates old items ----------+
+-->
+
+![Diagram](./images/Diagram.png)
